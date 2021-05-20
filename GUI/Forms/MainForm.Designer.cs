@@ -259,36 +259,8 @@ namespace GUI
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+
             // 
-            // pBoxBloodgif2
-            // 
-            this.pBoxBloodgif2.Image = global::GUI.Properties.Resources.blood_dripping;
-            this.pBoxBloodgif2.Location = new System.Drawing.Point(403, 0);
-            this.pBoxBloodgif2.Name = "pBoxBloodgif2";
-            this.pBoxBloodgif2.Size = new System.Drawing.Size(216, 230);
-            this.pBoxBloodgif2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pBoxBloodgif2.TabIndex = 2;
-            this.pBoxBloodgif2.TabStop = false;
-            // 
-            // pBoxBloodgif3
-            // 
-            this.pBoxBloodgif3.Image = global::GUI.Properties.Resources.blood_dripping;
-            this.pBoxBloodgif3.Location = new System.Drawing.Point(614, 0);
-            this.pBoxBloodgif3.Name = "pBoxBloodgif3";
-            this.pBoxBloodgif3.Size = new System.Drawing.Size(402, 230);
-            this.pBoxBloodgif3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pBoxBloodgif3.TabIndex = 1;
-            this.pBoxBloodgif3.TabStop = false;
-            // 
-            // pBoxBloodgif1
-            // 
-            this.pBoxBloodgif1.Image = global::GUI.Properties.Resources.blood_dripping;
-            this.pBoxBloodgif1.Location = new System.Drawing.Point(0, 0);
-            this.pBoxBloodgif1.Name = "pBoxBloodgif1";
-            this.pBoxBloodgif1.Size = new System.Drawing.Size(406, 230);
-            this.pBoxBloodgif1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pBoxBloodgif1.TabIndex = 0;
-            this.pBoxBloodgif1.TabStop = false;
             // 
             // MainForm
             // 

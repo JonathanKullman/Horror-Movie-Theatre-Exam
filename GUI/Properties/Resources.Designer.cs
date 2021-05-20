@@ -83,29 +83,9 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap arrowgif {
-            get {
-                object obj = ResourceManager.GetObject("arrowgif", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap arrowgif1 {
             get {
                 object obj = ResourceManager.GetObject("arrowgif1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap blood_dripping {
-            get {
-                object obj = ResourceManager.GetObject("blood dripping", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,26 +143,6 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap helpblood {
-            get {
-                object obj = ResourceManager.GetObject("helpblood", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap horrorbackgroundmain {
-            get {
-                object obj = ResourceManager.GetObject("horrorbackgroundmain", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap ItPoster {
             get {
                 object obj = ResourceManager.GetObject("ItPoster", resourceCulture);
@@ -193,29 +153,9 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MainGif {
-            get {
-                object obj = ResourceManager.GetObject("MainGif", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap MainGif2 {
             get {
                 object obj = ResourceManager.GetObject("MainGif2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Maingif3 {
-            get {
-                object obj = ResourceManager.GetObject("Maingif3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -246,26 +186,6 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap ScreamPoster {
             get {
                 object obj = ResourceManager.GetObject("ScreamPoster", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap searchbar1 {
-            get {
-                object obj = ResourceManager.GetObject("searchbar1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap searchbar2 {
-            get {
-                object obj = ResourceManager.GetObject("searchbar2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
