@@ -32,11 +32,12 @@ namespace GUI
             this.pBoxSelectedMovie = new System.Windows.Forms.PictureBox();
             this.tBoxMovieSummary = new System.Windows.Forms.TextBox();
             this.panelCustomerInput = new System.Windows.Forms.Panel();
+            this.pBoxPhoneNumberValidCheckgif = new System.Windows.Forms.PictureBox();
+            this.tBoxPhoneNumber = new System.Windows.Forms.TextBox();
             this.pBoxCheckboxTickets = new System.Windows.Forms.PictureBox();
             this.cBoxChooseTicketAmount = new System.Windows.Forms.ComboBox();
             this.btnBookNow = new System.Windows.Forms.Button();
             this.pBoxBookedApprovedGif = new System.Windows.Forms.PictureBox();
-            this.pBoxPhoneNumberValidCheckgif = new System.Windows.Forms.PictureBox();
             this.pBoxLastNameValidCheckgif = new System.Windows.Forms.PictureBox();
             this.pBoxFirstNameValidCheckgif = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -48,7 +49,6 @@ namespace GUI
             this.lblPhoneNumber = new System.Windows.Forms.Label();
             this.lblLastName = new System.Windows.Forms.Label();
             this.lblFirstName = new System.Windows.Forms.Label();
-            this.tBoxPhoneNumber = new System.Windows.Forms.TextBox();
             this.tBoxLastName = new System.Windows.Forms.TextBox();
             this.tBoxFirstName = new System.Windows.Forms.TextBox();
             this.panelTicketSeatHallInfo = new System.Windows.Forms.Panel();
@@ -58,9 +58,9 @@ namespace GUI
             this.lblTicketsLeftText = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxSelectedMovie)).BeginInit();
             this.panelCustomerInput.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxPhoneNumberValidCheckgif)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxCheckboxTickets)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxBookedApprovedGif)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxPhoneNumberValidCheckgif)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxLastNameValidCheckgif)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxFirstNameValidCheckgif)).BeginInit();
             this.panelTicketSeatHallInfo.SuspendLayout();
@@ -68,23 +68,29 @@ namespace GUI
             // 
             // pBoxSelectedMovie
             // 
-            this.pBoxSelectedMovie.Location = new System.Drawing.Point(5, 7);
+            this.pBoxSelectedMovie.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pBoxSelectedMovie.Location = new System.Drawing.Point(50, 8);
+            this.pBoxSelectedMovie.Margin = new System.Windows.Forms.Padding(2);
             this.pBoxSelectedMovie.Name = "pBoxSelectedMovie";
-            this.pBoxSelectedMovie.Size = new System.Drawing.Size(218, 337);
+            this.pBoxSelectedMovie.Size = new System.Drawing.Size(153, 202);
             this.pBoxSelectedMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBoxSelectedMovie.TabIndex = 0;
             this.pBoxSelectedMovie.TabStop = false;
             // 
             // tBoxMovieSummary
             // 
-            this.tBoxMovieSummary.Location = new System.Drawing.Point(240, 12);
+            this.tBoxMovieSummary.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tBoxMovieSummary.Location = new System.Drawing.Point(214, 11);
+            this.tBoxMovieSummary.Margin = new System.Windows.Forms.Padding(2);
             this.tBoxMovieSummary.Multiline = true;
             this.tBoxMovieSummary.Name = "tBoxMovieSummary";
-            this.tBoxMovieSummary.Size = new System.Drawing.Size(335, 140);
+            this.tBoxMovieSummary.ReadOnly = true;
+            this.tBoxMovieSummary.Size = new System.Drawing.Size(236, 86);
             this.tBoxMovieSummary.TabIndex = 8;
             // 
             // panelCustomerInput
             // 
+            this.panelCustomerInput.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panelCustomerInput.Controls.Add(this.pBoxPhoneNumberValidCheckgif);
             this.panelCustomerInput.Controls.Add(this.tBoxPhoneNumber);
             this.panelCustomerInput.Controls.Add(this.pBoxCheckboxTickets);
@@ -104,17 +110,42 @@ namespace GUI
             this.panelCustomerInput.Controls.Add(this.lblFirstName);
             this.panelCustomerInput.Controls.Add(this.tBoxLastName);
             this.panelCustomerInput.Controls.Add(this.tBoxFirstName);
-            this.panelCustomerInput.Location = new System.Drawing.Point(240, 158);
+            this.panelCustomerInput.Location = new System.Drawing.Point(214, 99);
+            this.panelCustomerInput.Margin = new System.Windows.Forms.Padding(2);
             this.panelCustomerInput.Name = "panelCustomerInput";
-            this.panelCustomerInput.Size = new System.Drawing.Size(383, 403);
+            this.panelCustomerInput.Size = new System.Drawing.Size(268, 242);
             this.panelCustomerInput.TabIndex = 9;
+            // 
+            // pBoxPhoneNumberValidCheckgif
+            // 
+            this.pBoxPhoneNumberValidCheckgif.Image = global::GUI.Properties.Resources.CheckmarkIcon;
+            this.pBoxPhoneNumberValidCheckgif.Location = new System.Drawing.Point(223, 125);
+            this.pBoxPhoneNumberValidCheckgif.Margin = new System.Windows.Forms.Padding(2);
+            this.pBoxPhoneNumberValidCheckgif.Name = "pBoxPhoneNumberValidCheckgif";
+            this.pBoxPhoneNumberValidCheckgif.Size = new System.Drawing.Size(24, 19);
+            this.pBoxPhoneNumberValidCheckgif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxPhoneNumberValidCheckgif.TabIndex = 16;
+            this.pBoxPhoneNumberValidCheckgif.TabStop = false;
+            this.pBoxPhoneNumberValidCheckgif.Visible = false;
+            // 
+            // tBoxPhoneNumber
+            // 
+            this.tBoxPhoneNumber.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.tBoxPhoneNumber.Location = new System.Drawing.Point(106, 125);
+            this.tBoxPhoneNumber.Margin = new System.Windows.Forms.Padding(2);
+            this.tBoxPhoneNumber.Name = "tBoxPhoneNumber";
+            this.tBoxPhoneNumber.Size = new System.Drawing.Size(106, 23);
+            this.tBoxPhoneNumber.TabIndex = 6;
+            this.tBoxPhoneNumber.Visible = false;
+            this.tBoxPhoneNumber.TextChanged += new System.EventHandler(this.tBoxPhoneNumber_TextChanged);
             // 
             // pBoxCheckboxTickets
             // 
             this.pBoxCheckboxTickets.Image = global::GUI.Properties.Resources.CheckmarkIcon;
-            this.pBoxCheckboxTickets.Location = new System.Drawing.Point(318, 262);
+            this.pBoxCheckboxTickets.Location = new System.Drawing.Point(223, 157);
+            this.pBoxCheckboxTickets.Margin = new System.Windows.Forms.Padding(2);
             this.pBoxCheckboxTickets.Name = "pBoxCheckboxTickets";
-            this.pBoxCheckboxTickets.Size = new System.Drawing.Size(35, 32);
+            this.pBoxCheckboxTickets.Size = new System.Drawing.Size(24, 19);
             this.pBoxCheckboxTickets.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBoxCheckboxTickets.TabIndex = 17;
             this.pBoxCheckboxTickets.TabStop = false;
@@ -145,12 +176,11 @@ namespace GUI
             "17",
             "18",
             "19",
-            "20",
-            "21",
-            "22"});
-            this.cBoxChooseTicketAmount.Location = new System.Drawing.Point(152, 262);
+            "20"});
+            this.cBoxChooseTicketAmount.Location = new System.Drawing.Point(106, 157);
+            this.cBoxChooseTicketAmount.Margin = new System.Windows.Forms.Padding(2);
             this.cBoxChooseTicketAmount.Name = "cBoxChooseTicketAmount";
-            this.cBoxChooseTicketAmount.Size = new System.Drawing.Size(150, 33);
+            this.cBoxChooseTicketAmount.Size = new System.Drawing.Size(106, 23);
             this.cBoxChooseTicketAmount.TabIndex = 7;
             this.cBoxChooseTicketAmount.Visible = false;
             this.cBoxChooseTicketAmount.SelectedIndexChanged += new System.EventHandler(this.cBoxChooseTicketAmount_SelectedIndexChanged);
@@ -161,9 +191,10 @@ namespace GUI
             this.btnBookNow.Enabled = false;
             this.btnBookNow.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnBookNow.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btnBookNow.Location = new System.Drawing.Point(91, 322);
+            this.btnBookNow.Location = new System.Drawing.Point(64, 193);
+            this.btnBookNow.Margin = new System.Windows.Forms.Padding(2);
             this.btnBookNow.Name = "btnBookNow";
-            this.btnBookNow.Size = new System.Drawing.Size(143, 46);
+            this.btnBookNow.Size = new System.Drawing.Size(100, 28);
             this.btnBookNow.TabIndex = 8;
             this.btnBookNow.Text = "Book Now";
             this.btnBookNow.UseVisualStyleBackColor = false;
@@ -173,31 +204,22 @@ namespace GUI
             // pBoxBookedApprovedGif
             // 
             this.pBoxBookedApprovedGif.Image = global::GUI.Properties.Resources.Checkmarkgif;
-            this.pBoxBookedApprovedGif.Location = new System.Drawing.Point(188, 242);
+            this.pBoxBookedApprovedGif.Location = new System.Drawing.Point(132, 145);
+            this.pBoxBookedApprovedGif.Margin = new System.Windows.Forms.Padding(2);
             this.pBoxBookedApprovedGif.Name = "pBoxBookedApprovedGif";
-            this.pBoxBookedApprovedGif.Size = new System.Drawing.Size(210, 205);
+            this.pBoxBookedApprovedGif.Size = new System.Drawing.Size(147, 123);
             this.pBoxBookedApprovedGif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBoxBookedApprovedGif.TabIndex = 18;
             this.pBoxBookedApprovedGif.TabStop = false;
             this.pBoxBookedApprovedGif.Visible = false;
             // 
-            // pBoxPhoneNumberValidCheckgif
-            // 
-            this.pBoxPhoneNumberValidCheckgif.Image = global::GUI.Properties.Resources.CheckmarkIcon;
-            this.pBoxPhoneNumberValidCheckgif.Location = new System.Drawing.Point(318, 208);
-            this.pBoxPhoneNumberValidCheckgif.Name = "pBoxPhoneNumberValidCheckgif";
-            this.pBoxPhoneNumberValidCheckgif.Size = new System.Drawing.Size(35, 32);
-            this.pBoxPhoneNumberValidCheckgif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBoxPhoneNumberValidCheckgif.TabIndex = 16;
-            this.pBoxPhoneNumberValidCheckgif.TabStop = false;
-            this.pBoxPhoneNumberValidCheckgif.Visible = false;
-            // 
             // pBoxLastNameValidCheckgif
             // 
             this.pBoxLastNameValidCheckgif.Image = global::GUI.Properties.Resources.CheckmarkIcon;
-            this.pBoxLastNameValidCheckgif.Location = new System.Drawing.Point(318, 160);
+            this.pBoxLastNameValidCheckgif.Location = new System.Drawing.Point(223, 96);
+            this.pBoxLastNameValidCheckgif.Margin = new System.Windows.Forms.Padding(2);
             this.pBoxLastNameValidCheckgif.Name = "pBoxLastNameValidCheckgif";
-            this.pBoxLastNameValidCheckgif.Size = new System.Drawing.Size(35, 32);
+            this.pBoxLastNameValidCheckgif.Size = new System.Drawing.Size(24, 19);
             this.pBoxLastNameValidCheckgif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBoxLastNameValidCheckgif.TabIndex = 15;
             this.pBoxLastNameValidCheckgif.TabStop = false;
@@ -206,9 +228,10 @@ namespace GUI
             // pBoxFirstNameValidCheckgif
             // 
             this.pBoxFirstNameValidCheckgif.Image = global::GUI.Properties.Resources.CheckmarkIcon;
-            this.pBoxFirstNameValidCheckgif.Location = new System.Drawing.Point(318, 111);
+            this.pBoxFirstNameValidCheckgif.Location = new System.Drawing.Point(223, 67);
+            this.pBoxFirstNameValidCheckgif.Margin = new System.Windows.Forms.Padding(2);
             this.pBoxFirstNameValidCheckgif.Name = "pBoxFirstNameValidCheckgif";
-            this.pBoxFirstNameValidCheckgif.Size = new System.Drawing.Size(35, 32);
+            this.pBoxFirstNameValidCheckgif.Size = new System.Drawing.Size(24, 19);
             this.pBoxFirstNameValidCheckgif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBoxFirstNameValidCheckgif.TabIndex = 14;
             this.pBoxFirstNameValidCheckgif.TabStop = false;
@@ -224,9 +247,10 @@ namespace GUI
             "22:00 - 00:00",
             "00:00 - 02:00",
             "02:00 - 04:00"});
-            this.comboBox1.Location = new System.Drawing.Point(152, 60);
+            this.comboBox1.Location = new System.Drawing.Point(106, 36);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(150, 33);
+            this.comboBox1.Size = new System.Drawing.Size(106, 23);
             this.comboBox1.TabIndex = 13;
             this.comboBox1.Visible = false;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
@@ -235,9 +259,10 @@ namespace GUI
             // 
             this.lblChooseTime.AutoSize = true;
             this.lblChooseTime.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblChooseTime.Location = new System.Drawing.Point(54, 65);
+            this.lblChooseTime.Location = new System.Drawing.Point(38, 39);
+            this.lblChooseTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblChooseTime.Name = "lblChooseTime";
-            this.lblChooseTime.Size = new System.Drawing.Size(49, 22);
+            this.lblChooseTime.Size = new System.Drawing.Size(33, 16);
             this.lblChooseTime.TabIndex = 12;
             this.lblChooseTime.Text = "Time:";
             // 
@@ -245,9 +270,10 @@ namespace GUI
             // 
             this.lblWheelChair.AutoSize = true;
             this.lblWheelChair.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblWheelChair.Location = new System.Drawing.Point(35, 21);
+            this.lblWheelChair.Location = new System.Drawing.Point(24, 13);
+            this.lblWheelChair.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblWheelChair.Name = "lblWheelChair";
-            this.lblWheelChair.Size = new System.Drawing.Size(96, 22);
+            this.lblWheelChair.Size = new System.Drawing.Size(64, 16);
             this.lblWheelChair.TabIndex = 10;
             this.lblWheelChair.Text = "WheelChair";
             // 
@@ -255,9 +281,10 @@ namespace GUI
             // 
             this.lblTickets.AutoSize = true;
             this.lblTickets.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTickets.Location = new System.Drawing.Point(54, 267);
+            this.lblTickets.Location = new System.Drawing.Point(38, 160);
+            this.lblTickets.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTickets.Name = "lblTickets";
-            this.lblTickets.Size = new System.Drawing.Size(63, 22);
+            this.lblTickets.Size = new System.Drawing.Size(44, 16);
             this.lblTickets.TabIndex = 7;
             this.lblTickets.Text = "Tickets";
             this.lblTickets.Visible = false;
@@ -267,9 +294,10 @@ namespace GUI
             this.chBoxWheelChairYes.AutoSize = true;
             this.chBoxWheelChairYes.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.chBoxWheelChairYes.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.chBoxWheelChairYes.Location = new System.Drawing.Point(152, 20);
+            this.chBoxWheelChairYes.Location = new System.Drawing.Point(106, 12);
+            this.chBoxWheelChairYes.Margin = new System.Windows.Forms.Padding(2);
             this.chBoxWheelChairYes.Name = "chBoxWheelChairYes";
-            this.chBoxWheelChairYes.Size = new System.Drawing.Size(61, 26);
+            this.chBoxWheelChairYes.Size = new System.Drawing.Size(44, 20);
             this.chBoxWheelChairYes.TabIndex = 1;
             this.chBoxWheelChairYes.Text = "Yes";
             this.chBoxWheelChairYes.UseVisualStyleBackColor = false;
@@ -280,9 +308,10 @@ namespace GUI
             this.chBoxWheelChairNO.AutoSize = true;
             this.chBoxWheelChairNO.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.chBoxWheelChairNO.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.chBoxWheelChairNO.Location = new System.Drawing.Point(241, 20);
+            this.chBoxWheelChairNO.Location = new System.Drawing.Point(169, 12);
+            this.chBoxWheelChairNO.Margin = new System.Windows.Forms.Padding(2);
             this.chBoxWheelChairNO.Name = "chBoxWheelChairNO";
-            this.chBoxWheelChairNO.Size = new System.Drawing.Size(55, 26);
+            this.chBoxWheelChairNO.Size = new System.Drawing.Size(39, 20);
             this.chBoxWheelChairNO.TabIndex = 2;
             this.chBoxWheelChairNO.Text = "No";
             this.chBoxWheelChairNO.UseVisualStyleBackColor = false;
@@ -292,9 +321,10 @@ namespace GUI
             // 
             this.lblPhoneNumber.AutoSize = true;
             this.lblPhoneNumber.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPhoneNumber.Location = new System.Drawing.Point(23, 212);
+            this.lblPhoneNumber.Location = new System.Drawing.Point(16, 127);
+            this.lblPhoneNumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPhoneNumber.Name = "lblPhoneNumber";
-            this.lblPhoneNumber.Size = new System.Drawing.Size(114, 22);
+            this.lblPhoneNumber.Size = new System.Drawing.Size(77, 16);
             this.lblPhoneNumber.TabIndex = 5;
             this.lblPhoneNumber.Text = "Phone Number";
             this.lblPhoneNumber.Visible = false;
@@ -303,9 +333,10 @@ namespace GUI
             // 
             this.lblLastName.AutoSize = true;
             this.lblLastName.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblLastName.Location = new System.Drawing.Point(36, 164);
+            this.lblLastName.Location = new System.Drawing.Point(25, 98);
+            this.lblLastName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(83, 22);
+            this.lblLastName.Size = new System.Drawing.Size(58, 16);
             this.lblLastName.TabIndex = 4;
             this.lblLastName.Text = "Last Name";
             this.lblLastName.Visible = false;
@@ -314,29 +345,21 @@ namespace GUI
             // 
             this.lblFirstName.AutoSize = true;
             this.lblFirstName.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblFirstName.Location = new System.Drawing.Point(35, 115);
+            this.lblFirstName.Location = new System.Drawing.Point(24, 69);
+            this.lblFirstName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(85, 22);
+            this.lblFirstName.Size = new System.Drawing.Size(59, 16);
             this.lblFirstName.TabIndex = 3;
             this.lblFirstName.Text = "First Name";
             this.lblFirstName.Visible = false;
             // 
-            // tBoxPhoneNumber
-            // 
-            this.tBoxPhoneNumber.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.tBoxPhoneNumber.Location = new System.Drawing.Point(152, 208);
-            this.tBoxPhoneNumber.Name = "tBoxPhoneNumber";
-            this.tBoxPhoneNumber.Size = new System.Drawing.Size(150, 31);
-            this.tBoxPhoneNumber.TabIndex = 6;
-            this.tBoxPhoneNumber.Visible = false;
-            this.tBoxPhoneNumber.TextChanged += new System.EventHandler(this.tBoxPhoneNumber_TextChanged);
-            // 
             // tBoxLastName
             // 
             this.tBoxLastName.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.tBoxLastName.Location = new System.Drawing.Point(152, 162);
+            this.tBoxLastName.Location = new System.Drawing.Point(106, 97);
+            this.tBoxLastName.Margin = new System.Windows.Forms.Padding(2);
             this.tBoxLastName.Name = "tBoxLastName";
-            this.tBoxLastName.Size = new System.Drawing.Size(150, 31);
+            this.tBoxLastName.Size = new System.Drawing.Size(106, 23);
             this.tBoxLastName.TabIndex = 5;
             this.tBoxLastName.Visible = false;
             this.tBoxLastName.TextChanged += new System.EventHandler(this.tBoxLastName_TextChanged);
@@ -344,22 +367,25 @@ namespace GUI
             // tBoxFirstName
             // 
             this.tBoxFirstName.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.tBoxFirstName.Location = new System.Drawing.Point(152, 111);
+            this.tBoxFirstName.Location = new System.Drawing.Point(106, 67);
+            this.tBoxFirstName.Margin = new System.Windows.Forms.Padding(2);
             this.tBoxFirstName.Name = "tBoxFirstName";
-            this.tBoxFirstName.Size = new System.Drawing.Size(150, 31);
+            this.tBoxFirstName.Size = new System.Drawing.Size(106, 23);
             this.tBoxFirstName.TabIndex = 4;
             this.tBoxFirstName.Visible = false;
             this.tBoxFirstName.TextChanged += new System.EventHandler(this.tBoxFirstName_TextChanged);
             // 
             // panelTicketSeatHallInfo
             // 
+            this.panelTicketSeatHallInfo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panelTicketSeatHallInfo.Controls.Add(this.lblTheatreHallChange);
             this.panelTicketSeatHallInfo.Controls.Add(this.lblTheatreHallText);
             this.panelTicketSeatHallInfo.Controls.Add(this.lblTicketsLeftChange);
             this.panelTicketSeatHallInfo.Controls.Add(this.lblTicketsLeftText);
-            this.panelTicketSeatHallInfo.Location = new System.Drawing.Point(5, 364);
+            this.panelTicketSeatHallInfo.Location = new System.Drawing.Point(50, 222);
+            this.panelTicketSeatHallInfo.Margin = new System.Windows.Forms.Padding(2);
             this.panelTicketSeatHallInfo.Name = "panelTicketSeatHallInfo";
-            this.panelTicketSeatHallInfo.Size = new System.Drawing.Size(218, 285);
+            this.panelTicketSeatHallInfo.Size = new System.Drawing.Size(153, 171);
             this.panelTicketSeatHallInfo.TabIndex = 10;
             // 
             // lblTheatreHallChange
@@ -368,9 +394,10 @@ namespace GUI
             this.lblTheatreHallChange.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblTheatreHallChange.Font = new System.Drawing.Font("Georgia", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTheatreHallChange.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lblTheatreHallChange.Location = new System.Drawing.Point(98, 116);
+            this.lblTheatreHallChange.Location = new System.Drawing.Point(69, 70);
+            this.lblTheatreHallChange.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTheatreHallChange.Name = "lblTheatreHallChange";
-            this.lblTheatreHallChange.Size = new System.Drawing.Size(27, 27);
+            this.lblTheatreHallChange.Size = new System.Drawing.Size(18, 18);
             this.lblTheatreHallChange.TabIndex = 3;
             this.lblTheatreHallChange.Text = "0";
             this.lblTheatreHallChange.Visible = false;
@@ -380,9 +407,10 @@ namespace GUI
             this.lblTheatreHallText.AutoSize = true;
             this.lblTheatreHallText.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblTheatreHallText.Font = new System.Drawing.Font("Georgia", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTheatreHallText.Location = new System.Drawing.Point(32, 89);
+            this.lblTheatreHallText.Location = new System.Drawing.Point(22, 53);
+            this.lblTheatreHallText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTheatreHallText.Name = "lblTheatreHallText";
-            this.lblTheatreHallText.Size = new System.Drawing.Size(170, 27);
+            this.lblTheatreHallText.Size = new System.Drawing.Size(115, 18);
             this.lblTheatreHallText.TabIndex = 2;
             this.lblTheatreHallText.Text = "Theatre Hall: ";
             this.lblTheatreHallText.Visible = false;
@@ -393,9 +421,10 @@ namespace GUI
             this.lblTicketsLeftChange.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblTicketsLeftChange.Font = new System.Drawing.Font("Georgia", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTicketsLeftChange.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lblTicketsLeftChange.Location = new System.Drawing.Point(99, 39);
+            this.lblTicketsLeftChange.Location = new System.Drawing.Point(69, 23);
+            this.lblTicketsLeftChange.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTicketsLeftChange.Name = "lblTicketsLeftChange";
-            this.lblTicketsLeftChange.Size = new System.Drawing.Size(27, 27);
+            this.lblTicketsLeftChange.Size = new System.Drawing.Size(18, 18);
             this.lblTicketsLeftChange.TabIndex = 1;
             this.lblTicketsLeftChange.Text = "0";
             this.lblTicketsLeftChange.Visible = false;
@@ -405,31 +434,34 @@ namespace GUI
             this.lblTicketsLeftText.AutoSize = true;
             this.lblTicketsLeftText.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblTicketsLeftText.Font = new System.Drawing.Font("Georgia", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTicketsLeftText.Location = new System.Drawing.Point(38, 12);
+            this.lblTicketsLeftText.Location = new System.Drawing.Point(27, 7);
+            this.lblTicketsLeftText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTicketsLeftText.Name = "lblTicketsLeftText";
-            this.lblTicketsLeftText.Size = new System.Drawing.Size(160, 27);
+            this.lblTicketsLeftText.Size = new System.Drawing.Size(107, 18);
             this.lblTicketsLeftText.TabIndex = 0;
             this.lblTicketsLeftText.Text = "Tickets Left: ";
             this.lblTicketsLeftText.Visible = false;
             // 
             // PickedMovieForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(775, 661);
+            this.ClientSize = new System.Drawing.Size(542, 397);
             this.Controls.Add(this.panelTicketSeatHallInfo);
             this.Controls.Add(this.panelCustomerInput);
             this.Controls.Add(this.tBoxMovieSummary);
             this.Controls.Add(this.pBoxSelectedMovie);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PickedMovieForm";
             this.Text = "Horror Movie Theatre Booker";
             ((System.ComponentModel.ISupportInitialize)(this.pBoxSelectedMovie)).EndInit();
             this.panelCustomerInput.ResumeLayout(false);
             this.panelCustomerInput.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxPhoneNumberValidCheckgif)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxCheckboxTickets)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxBookedApprovedGif)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxPhoneNumberValidCheckgif)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxLastNameValidCheckgif)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxFirstNameValidCheckgif)).EndInit();
             this.panelTicketSeatHallInfo.ResumeLayout(false);

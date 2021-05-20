@@ -85,18 +85,20 @@ namespace GUI
             this.panel1.Controls.Add(this.btnAQuietPlace);
             this.panel1.Controls.Add(this.btnAlien);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(775, 0);
+            this.panel1.Location = new System.Drawing.Point(542, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(241, 661);
+            this.panel1.Size = new System.Drawing.Size(169, 397);
             this.panel1.TabIndex = 0;
             // 
             // lblTheShining
             // 
             this.lblTheShining.AutoSize = true;
             this.lblTheShining.ForeColor = System.Drawing.Color.Yellow;
-            this.lblTheShining.Location = new System.Drawing.Point(64, 3122);
+            this.lblTheShining.Location = new System.Drawing.Point(45, 1873);
+            this.lblTheShining.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTheShining.Name = "lblTheShining";
-            this.lblTheShining.Size = new System.Drawing.Size(104, 25);
+            this.lblTheShining.Size = new System.Drawing.Size(69, 15);
             this.lblTheShining.TabIndex = 21;
             this.lblTheShining.Text = "The Shining";
             // 
@@ -104,9 +106,10 @@ namespace GUI
             // 
             this.btnTheShining.BackgroundImage = global::GUI.Properties.Resources.TheShiningPoster;
             this.btnTheShining.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTheShining.Location = new System.Drawing.Point(41, 2872);
+            this.btnTheShining.Location = new System.Drawing.Point(29, 1723);
+            this.btnTheShining.Margin = new System.Windows.Forms.Padding(2);
             this.btnTheShining.Name = "btnTheShining";
-            this.btnTheShining.Size = new System.Drawing.Size(141, 247);
+            this.btnTheShining.Size = new System.Drawing.Size(99, 148);
             this.btnTheShining.TabIndex = 20;
             this.btnTheShining.UseVisualStyleBackColor = true;
             this.btnTheShining.Click += new System.EventHandler(this.btnTheShining_Click);
@@ -115,9 +118,10 @@ namespace GUI
             // 
             this.lblTheGrudge.AutoSize = true;
             this.lblTheGrudge.ForeColor = System.Drawing.Color.Yellow;
-            this.lblTheGrudge.Location = new System.Drawing.Point(63, 2806);
+            this.lblTheGrudge.Location = new System.Drawing.Point(44, 1684);
+            this.lblTheGrudge.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTheGrudge.Name = "lblTheGrudge";
-            this.lblTheGrudge.Size = new System.Drawing.Size(104, 25);
+            this.lblTheGrudge.Size = new System.Drawing.Size(68, 15);
             this.lblTheGrudge.TabIndex = 19;
             this.lblTheGrudge.Text = "The Grudge";
             // 
@@ -125,9 +129,10 @@ namespace GUI
             // 
             this.lblTheBlairWitchProject.AutoSize = true;
             this.lblTheBlairWitchProject.ForeColor = System.Drawing.Color.Yellow;
-            this.lblTheBlairWitchProject.Location = new System.Drawing.Point(26, 2490);
+            this.lblTheBlairWitchProject.Location = new System.Drawing.Point(18, 1494);
+            this.lblTheBlairWitchProject.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTheBlairWitchProject.Name = "lblTheBlairWitchProject";
-            this.lblTheBlairWitchProject.Size = new System.Drawing.Size(187, 25);
+            this.lblTheBlairWitchProject.Size = new System.Drawing.Size(126, 15);
             this.lblTheBlairWitchProject.TabIndex = 18;
             this.lblTheBlairWitchProject.Text = "The Blair Witch Project";
             // 
@@ -135,9 +140,10 @@ namespace GUI
             // 
             this.lblScream.AutoSize = true;
             this.lblScream.ForeColor = System.Drawing.Color.Yellow;
-            this.lblScream.Location = new System.Drawing.Point(81, 2174);
+            this.lblScream.Location = new System.Drawing.Point(57, 1304);
+            this.lblScream.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblScream.Name = "lblScream";
-            this.lblScream.Size = new System.Drawing.Size(70, 25);
+            this.lblScream.Size = new System.Drawing.Size(46, 15);
             this.lblScream.TabIndex = 16;
             this.lblScream.Text = "Scream";
             // 
@@ -145,9 +151,10 @@ namespace GUI
             // 
             this.lblSaw.AutoSize = true;
             this.lblSaw.ForeColor = System.Drawing.Color.Yellow;
-            this.lblSaw.Location = new System.Drawing.Point(91, 1858);
+            this.lblSaw.Location = new System.Drawing.Point(64, 1115);
+            this.lblSaw.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSaw.Name = "lblSaw";
-            this.lblSaw.Size = new System.Drawing.Size(50, 25);
+            this.lblSaw.Size = new System.Drawing.Size(31, 15);
             this.lblSaw.TabIndex = 15;
             this.lblSaw.Text = "SAW";
             // 
@@ -155,9 +162,10 @@ namespace GUI
             // 
             this.lblParanormalActivity.AutoSize = true;
             this.lblParanormalActivity.ForeColor = System.Drawing.Color.Yellow;
-            this.lblParanormalActivity.Location = new System.Drawing.Point(39, 1542);
+            this.lblParanormalActivity.Location = new System.Drawing.Point(27, 925);
+            this.lblParanormalActivity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblParanormalActivity.Name = "lblParanormalActivity";
-            this.lblParanormalActivity.Size = new System.Drawing.Size(164, 25);
+            this.lblParanormalActivity.Size = new System.Drawing.Size(111, 15);
             this.lblParanormalActivity.TabIndex = 14;
             this.lblParanormalActivity.Text = "Paranormal Activity";
             // 
@@ -165,9 +173,10 @@ namespace GUI
             // 
             this.lblDawnOfTheDead.AutoSize = true;
             this.lblDawnOfTheDead.ForeColor = System.Drawing.Color.Yellow;
-            this.lblDawnOfTheDead.Location = new System.Drawing.Point(43, 1226);
+            this.lblDawnOfTheDead.Location = new System.Drawing.Point(30, 736);
+            this.lblDawnOfTheDead.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDawnOfTheDead.Name = "lblDawnOfTheDead";
-            this.lblDawnOfTheDead.Size = new System.Drawing.Size(156, 25);
+            this.lblDawnOfTheDead.Size = new System.Drawing.Size(101, 15);
             this.lblDawnOfTheDead.TabIndex = 13;
             this.lblDawnOfTheDead.Text = "Dawn of the Dead";
             // 
@@ -175,9 +184,10 @@ namespace GUI
             // 
             this.lblIt.AutoSize = true;
             this.lblIt.ForeColor = System.Drawing.Color.Yellow;
-            this.lblIt.Location = new System.Drawing.Point(100, 910);
+            this.lblIt.Location = new System.Drawing.Point(70, 546);
+            this.lblIt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIt.Name = "lblIt";
-            this.lblIt.Size = new System.Drawing.Size(26, 25);
+            this.lblIt.Size = new System.Drawing.Size(16, 15);
             this.lblIt.TabIndex = 12;
             this.lblIt.Text = "IT";
             // 
@@ -185,9 +195,10 @@ namespace GUI
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(54, 594);
+            this.label1.Location = new System.Drawing.Point(38, 356);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 25);
+            this.label1.Size = new System.Drawing.Size(78, 15);
             this.label1.TabIndex = 11;
             this.label1.Text = "A Quiet Place";
             // 
@@ -195,9 +206,10 @@ namespace GUI
             // 
             this.lblAlien.AutoSize = true;
             this.lblAlien.ForeColor = System.Drawing.Color.Yellow;
-            this.lblAlien.Location = new System.Drawing.Point(89, 278);
+            this.lblAlien.Location = new System.Drawing.Point(62, 167);
+            this.lblAlien.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAlien.Name = "lblAlien";
-            this.lblAlien.Size = new System.Drawing.Size(51, 25);
+            this.lblAlien.Size = new System.Drawing.Size(34, 15);
             this.lblAlien.TabIndex = 10;
             this.lblAlien.Text = "Alien";
             // 
@@ -205,9 +217,10 @@ namespace GUI
             // 
             this.btnTheGrudge.BackgroundImage = global::GUI.Properties.Resources.TheGrudgePoster;
             this.btnTheGrudge.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTheGrudge.Location = new System.Drawing.Point(41, 2556);
+            this.btnTheGrudge.Location = new System.Drawing.Point(29, 1534);
+            this.btnTheGrudge.Margin = new System.Windows.Forms.Padding(2);
             this.btnTheGrudge.Name = "btnTheGrudge";
-            this.btnTheGrudge.Size = new System.Drawing.Size(141, 247);
+            this.btnTheGrudge.Size = new System.Drawing.Size(99, 148);
             this.btnTheGrudge.TabIndex = 9;
             this.btnTheGrudge.UseVisualStyleBackColor = true;
             this.btnTheGrudge.Click += new System.EventHandler(this.btnTheGrudge_Click);
@@ -216,9 +229,10 @@ namespace GUI
             // 
             this.btnTheBlairWitchProject.BackgroundImage = global::GUI.Properties.Resources.TheBlairWitchProjectPoster;
             this.btnTheBlairWitchProject.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTheBlairWitchProject.Location = new System.Drawing.Point(41, 2240);
+            this.btnTheBlairWitchProject.Location = new System.Drawing.Point(29, 1344);
+            this.btnTheBlairWitchProject.Margin = new System.Windows.Forms.Padding(2);
             this.btnTheBlairWitchProject.Name = "btnTheBlairWitchProject";
-            this.btnTheBlairWitchProject.Size = new System.Drawing.Size(141, 247);
+            this.btnTheBlairWitchProject.Size = new System.Drawing.Size(99, 148);
             this.btnTheBlairWitchProject.TabIndex = 8;
             this.btnTheBlairWitchProject.UseVisualStyleBackColor = true;
             this.btnTheBlairWitchProject.Click += new System.EventHandler(this.btnTheBlairWitchProject_Click);
@@ -227,9 +241,10 @@ namespace GUI
             // 
             this.btnScream.BackgroundImage = global::GUI.Properties.Resources.ScreamPoster;
             this.btnScream.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnScream.Location = new System.Drawing.Point(41, 1924);
+            this.btnScream.Location = new System.Drawing.Point(29, 1154);
+            this.btnScream.Margin = new System.Windows.Forms.Padding(2);
             this.btnScream.Name = "btnScream";
-            this.btnScream.Size = new System.Drawing.Size(141, 247);
+            this.btnScream.Size = new System.Drawing.Size(99, 148);
             this.btnScream.TabIndex = 7;
             this.btnScream.UseVisualStyleBackColor = true;
             this.btnScream.Click += new System.EventHandler(this.btnScream_Click);
@@ -238,9 +253,10 @@ namespace GUI
             // 
             this.button7.BackgroundImage = global::GUI.Properties.Resources.AlienPoster;
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.Location = new System.Drawing.Point(41, 1924);
+            this.button7.Location = new System.Drawing.Point(29, 1154);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(141, 247);
+            this.button7.Size = new System.Drawing.Size(99, 148);
             this.button7.TabIndex = 6;
             this.button7.Text = "button7";
             this.button7.UseVisualStyleBackColor = true;
@@ -249,9 +265,10 @@ namespace GUI
             // 
             this.btnSaw.BackgroundImage = global::GUI.Properties.Resources.SawPoster;
             this.btnSaw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSaw.Location = new System.Drawing.Point(41, 1608);
+            this.btnSaw.Location = new System.Drawing.Point(29, 965);
+            this.btnSaw.Margin = new System.Windows.Forms.Padding(2);
             this.btnSaw.Name = "btnSaw";
-            this.btnSaw.Size = new System.Drawing.Size(141, 247);
+            this.btnSaw.Size = new System.Drawing.Size(99, 148);
             this.btnSaw.TabIndex = 5;
             this.btnSaw.UseVisualStyleBackColor = true;
             this.btnSaw.Click += new System.EventHandler(this.btnSaw_Click);
@@ -260,9 +277,10 @@ namespace GUI
             // 
             this.btnParanormalActivity.BackgroundImage = global::GUI.Properties.Resources.ParanormalActivityPoster;
             this.btnParanormalActivity.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnParanormalActivity.Location = new System.Drawing.Point(41, 1292);
+            this.btnParanormalActivity.Location = new System.Drawing.Point(29, 775);
+            this.btnParanormalActivity.Margin = new System.Windows.Forms.Padding(2);
             this.btnParanormalActivity.Name = "btnParanormalActivity";
-            this.btnParanormalActivity.Size = new System.Drawing.Size(141, 247);
+            this.btnParanormalActivity.Size = new System.Drawing.Size(99, 148);
             this.btnParanormalActivity.TabIndex = 4;
             this.btnParanormalActivity.UseVisualStyleBackColor = true;
             this.btnParanormalActivity.Click += new System.EventHandler(this.btnParanormalActivity_Click);
@@ -271,9 +289,10 @@ namespace GUI
             // 
             this.btnDawnOfTheDead.BackgroundImage = global::GUI.Properties.Resources.DawnOfTheDeadPoster;
             this.btnDawnOfTheDead.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDawnOfTheDead.Location = new System.Drawing.Point(41, 976);
+            this.btnDawnOfTheDead.Location = new System.Drawing.Point(29, 586);
+            this.btnDawnOfTheDead.Margin = new System.Windows.Forms.Padding(2);
             this.btnDawnOfTheDead.Name = "btnDawnOfTheDead";
-            this.btnDawnOfTheDead.Size = new System.Drawing.Size(141, 247);
+            this.btnDawnOfTheDead.Size = new System.Drawing.Size(99, 148);
             this.btnDawnOfTheDead.TabIndex = 3;
             this.btnDawnOfTheDead.UseVisualStyleBackColor = true;
             this.btnDawnOfTheDead.Click += new System.EventHandler(this.btnDawnOfTheDead_Click);
@@ -282,9 +301,10 @@ namespace GUI
             // 
             this.btnIt.BackgroundImage = global::GUI.Properties.Resources.ItPoster;
             this.btnIt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnIt.Location = new System.Drawing.Point(41, 660);
+            this.btnIt.Location = new System.Drawing.Point(29, 396);
+            this.btnIt.Margin = new System.Windows.Forms.Padding(2);
             this.btnIt.Name = "btnIt";
-            this.btnIt.Size = new System.Drawing.Size(141, 247);
+            this.btnIt.Size = new System.Drawing.Size(99, 148);
             this.btnIt.TabIndex = 2;
             this.btnIt.UseVisualStyleBackColor = true;
             this.btnIt.Click += new System.EventHandler(this.btnIt_Click);
@@ -293,9 +313,10 @@ namespace GUI
             // 
             this.btnAQuietPlace.BackgroundImage = global::GUI.Properties.Resources.AQuietPlacePoster;
             this.btnAQuietPlace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAQuietPlace.Location = new System.Drawing.Point(41, 344);
+            this.btnAQuietPlace.Location = new System.Drawing.Point(29, 206);
+            this.btnAQuietPlace.Margin = new System.Windows.Forms.Padding(2);
             this.btnAQuietPlace.Name = "btnAQuietPlace";
-            this.btnAQuietPlace.Size = new System.Drawing.Size(141, 247);
+            this.btnAQuietPlace.Size = new System.Drawing.Size(99, 148);
             this.btnAQuietPlace.TabIndex = 1;
             this.btnAQuietPlace.UseVisualStyleBackColor = true;
             this.btnAQuietPlace.Click += new System.EventHandler(this.btnAQuietPlace_Click);
@@ -304,9 +325,10 @@ namespace GUI
             // 
             this.btnAlien.BackgroundImage = global::GUI.Properties.Resources.AlienPoster;
             this.btnAlien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAlien.Location = new System.Drawing.Point(41, 28);
+            this.btnAlien.Location = new System.Drawing.Point(29, 17);
+            this.btnAlien.Margin = new System.Windows.Forms.Padding(2);
             this.btnAlien.Name = "btnAlien";
-            this.btnAlien.Size = new System.Drawing.Size(141, 247);
+            this.btnAlien.Size = new System.Drawing.Size(99, 148);
             this.btnAlien.TabIndex = 0;
             this.btnAlien.UseVisualStyleBackColor = true;
             this.btnAlien.Click += new System.EventHandler(this.btnAlien_Click);
@@ -317,8 +339,9 @@ namespace GUI
             this.panelPickedMovieChildForm.Controls.Add(this.pBoxPointerGif);
             this.panelPickedMovieChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPickedMovieChildForm.Location = new System.Drawing.Point(0, 0);
+            this.panelPickedMovieChildForm.Margin = new System.Windows.Forms.Padding(2);
             this.panelPickedMovieChildForm.Name = "panelPickedMovieChildForm";
-            this.panelPickedMovieChildForm.Size = new System.Drawing.Size(775, 661);
+            this.panelPickedMovieChildForm.Size = new System.Drawing.Size(542, 397);
             this.panelPickedMovieChildForm.TabIndex = 3;
             // 
             // lblSelectAMovie
@@ -326,9 +349,10 @@ namespace GUI
             this.lblSelectAMovie.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSelectAMovie.AutoSize = true;
             this.lblSelectAMovie.Font = new System.Drawing.Font("Impact", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSelectAMovie.Location = new System.Drawing.Point(205, 140);
+            this.lblSelectAMovie.Location = new System.Drawing.Point(151, 79);
+            this.lblSelectAMovie.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSelectAMovie.Name = "lblSelectAMovie";
-            this.lblSelectAMovie.Size = new System.Drawing.Size(379, 68);
+            this.lblSelectAMovie.Size = new System.Drawing.Size(260, 46);
             this.lblSelectAMovie.TabIndex = 1;
             this.lblSelectAMovie.Text = "SELECT A MOVIE:";
             // 
@@ -336,21 +360,24 @@ namespace GUI
             // 
             this.pBoxPointerGif.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pBoxPointerGif.Image = global::GUI.Properties.Resources.arrowgif1;
-            this.pBoxPointerGif.Location = new System.Drawing.Point(137, 211);
+            this.pBoxPointerGif.Location = new System.Drawing.Point(103, 122);
+            this.pBoxPointerGif.Margin = new System.Windows.Forms.Padding(2);
             this.pBoxPointerGif.Name = "pBoxPointerGif";
-            this.pBoxPointerGif.Size = new System.Drawing.Size(519, 352);
+            this.pBoxPointerGif.Size = new System.Drawing.Size(363, 211);
             this.pBoxPointerGif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBoxPointerGif.TabIndex = 0;
             this.pBoxPointerGif.TabStop = false;
             // 
-            // Form2
+            // PickAMovieForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 661);
+            this.ClientSize = new System.Drawing.Size(711, 397);
             this.Controls.Add(this.panelPickedMovieChildForm);
             this.Controls.Add(this.panel1);
-            this.Name = "Form2";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "PickAMovieForm";
             this.Text = "Form2";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

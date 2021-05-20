@@ -43,6 +43,8 @@ namespace GUI
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            lblTicketsLeftChange.ForeColor = Color.ForestGreen;
+
             if (comboBox1.Text == "20:00 - 22:00" && chBoxWheelChairNO.Checked == true)
             {
                 pBoxFirstNameValidCheckgif.Visible = false;
@@ -78,6 +80,7 @@ namespace GUI
                 }
                 else if (Theatre != null)
                 {
+                    lblTicketsLeftChange.ForeColor = Color.Red;
                     lblTheatreHallChange.Visible = true;
                     lblTicketsLeftChange.Visible = true;
                     lblTicketsLeftText.Visible = true;
@@ -109,7 +112,9 @@ namespace GUI
                     btnBookNow.Visible = false;
                     tBoxPhoneNumber.Visible = false;
                     cBoxChooseTicketAmount.Visible = false;
-                 
+
+                    MessageBox.Show("There is no show of this movie at this time\nin a theatre hall that is adapted for wheelchairs.");
+
                 }
             }
             else if (comboBox1.Text == "20:00 - 22:00" && chBoxWheelChairYes.Checked == true)
@@ -123,6 +128,7 @@ namespace GUI
                 tBoxLastName.Text = "";
                 tBoxPhoneNumber.Text = "";
                 cBoxChooseTicketAmount.Text = "";
+
 
                 Theatre = bookingHandler.GetTheatreForWheelChair(new DateTime(2020, 06, 15, 20, 00, 00), Movie);
                 if (Theatre != null && Theatre.SeatsLeft > 0)
@@ -145,6 +151,7 @@ namespace GUI
                 }
                 else if (Theatre != null)
                 {
+                    lblTicketsLeftChange.ForeColor = Color.Red;
                     lblTheatreHallChange.Visible = true;
                     lblTicketsLeftChange.Visible = true;
                     lblTicketsLeftText.Visible = true;
@@ -176,7 +183,9 @@ namespace GUI
                     btnBookNow.Visible = false;
                     tBoxPhoneNumber.Visible = false;
                     cBoxChooseTicketAmount.Visible = false;
-                    
+
+                    MessageBox.Show("There is no show of this movie at this time\nin a theatre hall that is adapted for wheelchairs.");
+
                 }
             }
             else if (comboBox1.Text == "22:00 - 00:00" && chBoxWheelChairNO.Checked == true)
@@ -212,6 +221,7 @@ namespace GUI
                 }
                 else if (Theatre != null)
                 {
+                    lblTicketsLeftChange.ForeColor = Color.Red;
                     lblTheatreHallChange.Visible = true;
                     lblTicketsLeftChange.Visible = true;
                     lblTicketsLeftText.Visible = true;
@@ -243,7 +253,9 @@ namespace GUI
                     btnBookNow.Visible = false;
                     tBoxPhoneNumber.Visible = false;
                     cBoxChooseTicketAmount.Visible = false;
-                   
+
+                    MessageBox.Show("There is no show of this movie at this time\nin a theatre hall that is adapted for wheelchairs.");
+
                 }
 
             }
@@ -280,6 +292,7 @@ namespace GUI
                 }
                 else if (Theatre != null)
                 {
+                    lblTicketsLeftChange.ForeColor = Color.Red;
                     lblTheatreHallChange.Visible = true;
                     lblTicketsLeftChange.Visible = true;
                     lblTicketsLeftText.Visible = true;
@@ -311,7 +324,9 @@ namespace GUI
                     btnBookNow.Visible = false;
                     tBoxPhoneNumber.Visible = false;
                     cBoxChooseTicketAmount.Visible = false;
-                  
+
+                    MessageBox.Show("There is no show of this movie at this time\nin a theatre hall that is adapted for wheelchairs.");
+
                 }
 
             }
@@ -348,6 +363,7 @@ namespace GUI
                 }
                 else if (Theatre != null)
                 {
+                    lblTicketsLeftChange.ForeColor = Color.Red;
                     lblTheatreHallChange.Visible = true;
                     lblTicketsLeftChange.Visible = true;
                     lblTicketsLeftText.Visible = true;
@@ -379,7 +395,9 @@ namespace GUI
                     btnBookNow.Visible = false;
                     tBoxPhoneNumber.Visible = false;
                     cBoxChooseTicketAmount.Visible = false;
-                  
+
+                    MessageBox.Show("There is no show of this movie at this time\nin a theatre hall that is adapted for wheelchairs.");
+
                 }
             }
             else if (comboBox1.Text == "00:00 - 02:00" && chBoxWheelChairYes.Checked == true)
@@ -415,6 +433,7 @@ namespace GUI
                 }
                 else if (Theatre != null)
                 {
+                    lblTicketsLeftChange.ForeColor = Color.Red;
                     lblTheatreHallChange.Visible = true;
                     lblTicketsLeftChange.Visible = true;
                     lblTicketsLeftText.Visible = true;
@@ -446,7 +465,9 @@ namespace GUI
                     btnBookNow.Visible = false;
                     tBoxPhoneNumber.Visible = false;
                     cBoxChooseTicketAmount.Visible = false;
-                    
+
+                    MessageBox.Show("There is no show of this movie at this time\nin a theatre hall that is adapted for wheelchairs.");
+
                 }
             }
             else if (comboBox1.Text == "02:00 - 04:00" && chBoxWheelChairNO.Checked == true)
@@ -482,6 +503,7 @@ namespace GUI
                 }
                 else if (Theatre != null)
                 {
+                    lblTicketsLeftChange.ForeColor = Color.Red;
                     lblTheatreHallChange.Visible = true;
                     lblTicketsLeftChange.Visible = true;
                     lblTicketsLeftText.Visible = true;
@@ -513,7 +535,9 @@ namespace GUI
                     btnBookNow.Visible = false;
                     tBoxPhoneNumber.Visible = false;
                     cBoxChooseTicketAmount.Visible = false;
-                   
+
+                    MessageBox.Show("There is no show of this movie at this time\nin a theatre hall that is adapted for wheelchairs.");
+
                 }
 
             }
@@ -550,6 +574,7 @@ namespace GUI
                 }
                 else if (Theatre != null)
                 {
+                    lblTicketsLeftChange.ForeColor = Color.Red;
                     lblTheatreHallChange.Visible = true;
                     lblTicketsLeftChange.Visible = true;
                     lblTicketsLeftText.Visible = true;
@@ -562,7 +587,7 @@ namespace GUI
                     tBoxLastName.Visible = false;
                     btnBookNow.Visible = false;
                     tBoxPhoneNumber.Visible = false;
-                    cBoxChooseTicketAmount.Visible = false;
+                    cBoxChooseTicketAmount.Visible = false;                    
                     lblTicketsLeftChange.Text = "Sold Out";
                     lblTheatreHallChange.Text = Theatre.HallNumber.ToString();
                 }
@@ -580,7 +605,9 @@ namespace GUI
                     tBoxLastName.Visible = false;
                     btnBookNow.Visible = false;
                     tBoxPhoneNumber.Visible = false;
-                    cBoxChooseTicketAmount.Visible = false;                   
+                    cBoxChooseTicketAmount.Visible = false;
+
+                    MessageBox.Show("There is no show of this movie at this time\nin a theatre hall that is adapted for wheelchairs.");
                 }
 
             }
@@ -594,11 +621,49 @@ namespace GUI
                 comboBox1.Visible = true;
                 chBoxWheelChairNO.Checked = false;
 
+                lblTheatreHallChange.Visible = false;
+                lblTicketsLeftChange.Visible = false;
+                lblTicketsLeftText.Visible = false;
+                lblTheatreHallText.Visible = false;
+                lblFirstName.Visible = false;
+                lblLastName.Visible = false;
+                lblPhoneNumber.Visible = false;
+                lblTickets.Visible = false;
+                tBoxFirstName.Visible = false;
+                tBoxLastName.Visible = false;
+                btnBookNow.Visible = false;
+                tBoxPhoneNumber.Visible = false;
+                cBoxChooseTicketAmount.Visible = false;
+
+                pBoxFirstNameValidCheckgif.Visible = false;
+                pBoxLastNameValidCheckgif.Visible = false;
+                pBoxPhoneNumberValidCheckgif.Visible = false;
+                pBoxCheckboxTickets.Visible = false;
+
             }
             else if (chBoxWheelChairNO.Checked == true)
             {
                 comboBox1.Visible = true;
                 chBoxWheelChairYes.Checked = false;
+
+                lblTheatreHallChange.Visible = false;
+                lblTicketsLeftChange.Visible = false;
+                lblTicketsLeftText.Visible = false;
+                lblTheatreHallText.Visible = false;
+                lblFirstName.Visible = false;
+                lblLastName.Visible = false;
+                lblPhoneNumber.Visible = false;
+                lblTickets.Visible = false;
+                tBoxFirstName.Visible = false;
+                tBoxLastName.Visible = false;
+                btnBookNow.Visible = false;
+                tBoxPhoneNumber.Visible = false;
+                cBoxChooseTicketAmount.Visible = false;
+
+                pBoxFirstNameValidCheckgif.Visible = false;
+                pBoxLastNameValidCheckgif.Visible = false;
+                pBoxPhoneNumberValidCheckgif.Visible = false;
+                pBoxCheckboxTickets.Visible = false;
             }         
         }
 
@@ -609,11 +674,49 @@ namespace GUI
                 comboBox1.Visible = true;
                 chBoxWheelChairYes.Checked = false;
 
+                lblTheatreHallChange.Visible = false;
+                lblTicketsLeftChange.Visible = false;
+                lblTicketsLeftText.Visible = false;
+                lblTheatreHallText.Visible = false;
+                lblFirstName.Visible = false;
+                lblLastName.Visible = false;
+                lblPhoneNumber.Visible = false;
+                lblTickets.Visible = false;
+                tBoxFirstName.Visible = false;
+                tBoxLastName.Visible = false;
+                btnBookNow.Visible = false;
+                tBoxPhoneNumber.Visible = false;
+                cBoxChooseTicketAmount.Visible = false;
+
+                pBoxFirstNameValidCheckgif.Visible = false;
+                pBoxLastNameValidCheckgif.Visible = false;
+                pBoxPhoneNumberValidCheckgif.Visible = false;
+                pBoxCheckboxTickets.Visible = false;
+
             }
             else if (chBoxWheelChairYes.Checked == true)
             {
                 comboBox1.Visible = true;
                 chBoxWheelChairNO.Checked = false;
+
+                lblTheatreHallChange.Visible = false;
+                lblTicketsLeftChange.Visible = false;
+                lblTicketsLeftText.Visible = false;
+                lblTheatreHallText.Visible = false;
+                lblFirstName.Visible = false;
+                lblLastName.Visible = false;
+                lblPhoneNumber.Visible = false;
+                lblTickets.Visible = false;
+                tBoxFirstName.Visible = false;
+                tBoxLastName.Visible = false;
+                btnBookNow.Visible = false;
+                tBoxPhoneNumber.Visible = false;
+                cBoxChooseTicketAmount.Visible = false;
+                
+                pBoxFirstNameValidCheckgif.Visible = false;
+                pBoxLastNameValidCheckgif.Visible = false;
+                pBoxPhoneNumberValidCheckgif.Visible = false;
+                pBoxCheckboxTickets.Visible = false;
             }
 
         }
@@ -758,11 +861,10 @@ namespace GUI
                     $"Theatre hall: {Theatre.HallNumber}");
 
                 this.Close();
+
             }
-            
-
-                    
-
+                               
         }
+
     }
 }

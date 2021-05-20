@@ -38,6 +38,8 @@ namespace GUI
             lblTicketsLefttxt.Text = theatre.SeatsLeft.ToString();
             lblPlusUrOwnTickets.Text = $"Plus your own [{customer.Tickets.Count}]\n" +
                                        $"        tickets";
+            lblMovieStartsAt.Text = theatre.StartTime.ToString();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -97,5 +99,7 @@ namespace GUI
             childForm.Show();
 
         }
+
+
     }
 }

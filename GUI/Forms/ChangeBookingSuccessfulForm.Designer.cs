@@ -50,9 +50,12 @@ namespace GUI
             this.lblLName = new System.Windows.Forms.Label();
             this.lblFName = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblMovieStartsAt = new System.Windows.Forms.Label();
+            this.lblMovieStartAtHeader = new System.Windows.Forms.Label();
             this.panelChangeBookingSucFilled.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxAllowedAmtTicketsChange)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxCurrentMovie)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelChangeBookingSucFilled
@@ -86,10 +89,11 @@ namespace GUI
             // 
             // btnReBook
             // 
+            this.btnReBook.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnReBook.BackColor = System.Drawing.SystemColors.Control;
             this.btnReBook.Enabled = false;
             this.btnReBook.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnReBook.Location = new System.Drawing.Point(557, 357);
+            this.btnReBook.Location = new System.Drawing.Point(505, 358);
             this.btnReBook.Name = "btnReBook";
             this.btnReBook.Size = new System.Drawing.Size(75, 35);
             this.btnReBook.TabIndex = 18;
@@ -99,7 +103,8 @@ namespace GUI
             // 
             // pBoxAllowedAmtTicketsChange
             // 
-            this.pBoxAllowedAmtTicketsChange.Location = new System.Drawing.Point(655, 329);
+            this.pBoxAllowedAmtTicketsChange.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pBoxAllowedAmtTicketsChange.Location = new System.Drawing.Point(603, 330);
             this.pBoxAllowedAmtTicketsChange.Name = "pBoxAllowedAmtTicketsChange";
             this.pBoxAllowedAmtTicketsChange.Size = new System.Drawing.Size(26, 24);
             this.pBoxAllowedAmtTicketsChange.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -108,11 +113,12 @@ namespace GUI
             // 
             // lblPlusUrOwnTickets
             // 
+            this.lblPlusUrOwnTickets.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPlusUrOwnTickets.AutoSize = true;
             this.lblPlusUrOwnTickets.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.lblPlusUrOwnTickets.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblPlusUrOwnTickets.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblPlusUrOwnTickets.Location = new System.Drawing.Point(157, 144);
+            this.lblPlusUrOwnTickets.Location = new System.Drawing.Point(105, 145);
             this.lblPlusUrOwnTickets.Name = "lblPlusUrOwnTickets";
             this.lblPlusUrOwnTickets.Size = new System.Drawing.Size(43, 17);
             this.lblPlusUrOwnTickets.TabIndex = 16;
@@ -120,11 +126,12 @@ namespace GUI
             // 
             // lblTicketsLefttxt
             // 
+            this.lblTicketsLefttxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTicketsLefttxt.AutoSize = true;
             this.lblTicketsLefttxt.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.lblTicketsLefttxt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTicketsLefttxt.ForeColor = System.Drawing.Color.Green;
-            this.lblTicketsLefttxt.Location = new System.Drawing.Point(195, 117);
+            this.lblTicketsLefttxt.Location = new System.Drawing.Point(143, 118);
             this.lblTicketsLefttxt.Name = "lblTicketsLefttxt";
             this.lblTicketsLefttxt.Size = new System.Drawing.Size(57, 21);
             this.lblTicketsLefttxt.TabIndex = 15;
@@ -132,10 +139,11 @@ namespace GUI
             // 
             // lblTicketsLeft
             // 
+            this.lblTicketsLeft.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTicketsLeft.AutoSize = true;
             this.lblTicketsLeft.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.lblTicketsLeft.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTicketsLeft.Location = new System.Drawing.Point(163, 89);
+            this.lblTicketsLeft.Location = new System.Drawing.Point(111, 90);
             this.lblTicketsLeft.Name = "lblTicketsLeft";
             this.lblTicketsLeft.Size = new System.Drawing.Size(99, 23);
             this.lblTicketsLeft.TabIndex = 14;
@@ -143,10 +151,11 @@ namespace GUI
             // 
             // lblSelectNewAmtTickets
             // 
+            this.lblSelectNewAmtTickets.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSelectNewAmtTickets.AutoSize = true;
             this.lblSelectNewAmtTickets.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblSelectNewAmtTickets.ForeColor = System.Drawing.Color.Crimson;
-            this.lblSelectNewAmtTickets.Location = new System.Drawing.Point(508, 305);
+            this.lblSelectNewAmtTickets.Location = new System.Drawing.Point(456, 306);
             this.lblSelectNewAmtTickets.Name = "lblSelectNewAmtTickets";
             this.lblSelectNewAmtTickets.Size = new System.Drawing.Size(202, 17);
             this.lblSelectNewAmtTickets.TabIndex = 13;
@@ -154,10 +163,11 @@ namespace GUI
             // 
             // lblHallNumbertxt
             // 
+            this.lblHallNumbertxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblHallNumbertxt.AutoSize = true;
             this.lblHallNumbertxt.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblHallNumbertxt.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lblHallNumbertxt.Location = new System.Drawing.Point(588, 280);
+            this.lblHallNumbertxt.Location = new System.Drawing.Point(536, 281);
             this.lblHallNumbertxt.Name = "lblHallNumbertxt";
             this.lblHallNumbertxt.Size = new System.Drawing.Size(41, 17);
             this.lblHallNumbertxt.TabIndex = 12;
@@ -165,10 +175,11 @@ namespace GUI
             // 
             // lblTicketsOwnedtxt
             // 
+            this.lblTicketsOwnedtxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTicketsOwnedtxt.AutoSize = true;
             this.lblTicketsOwnedtxt.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTicketsOwnedtxt.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lblTicketsOwnedtxt.Location = new System.Drawing.Point(587, 233);
+            this.lblTicketsOwnedtxt.Location = new System.Drawing.Point(535, 234);
             this.lblTicketsOwnedtxt.Name = "lblTicketsOwnedtxt";
             this.lblTicketsOwnedtxt.Size = new System.Drawing.Size(41, 17);
             this.lblTicketsOwnedtxt.TabIndex = 11;
@@ -176,21 +187,24 @@ namespace GUI
             // 
             // lblMovietxt
             // 
+            this.lblMovietxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblMovietxt.AutoSize = true;
             this.lblMovietxt.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblMovietxt.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lblMovietxt.Location = new System.Drawing.Point(577, 187);
+            this.lblMovietxt.Location = new System.Drawing.Point(518, 188);
             this.lblMovietxt.Name = "lblMovietxt";
             this.lblMovietxt.Size = new System.Drawing.Size(41, 17);
             this.lblMovietxt.TabIndex = 10;
             this.lblMovietxt.Text = "label1";
+            this.lblMovietxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblLNametxt
             // 
+            this.lblLNametxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLNametxt.AutoSize = true;
             this.lblLNametxt.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblLNametxt.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lblLNametxt.Location = new System.Drawing.Point(577, 138);
+            this.lblLNametxt.Location = new System.Drawing.Point(525, 139);
             this.lblLNametxt.Name = "lblLNametxt";
             this.lblLNametxt.Size = new System.Drawing.Size(41, 17);
             this.lblLNametxt.TabIndex = 9;
@@ -198,10 +212,11 @@ namespace GUI
             // 
             // lblFNametxt
             // 
+            this.lblFNametxt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFNametxt.AutoSize = true;
             this.lblFNametxt.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblFNametxt.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lblFNametxt.Location = new System.Drawing.Point(577, 93);
+            this.lblFNametxt.Location = new System.Drawing.Point(525, 94);
             this.lblFNametxt.Name = "lblFNametxt";
             this.lblFNametxt.Size = new System.Drawing.Size(41, 17);
             this.lblFNametxt.TabIndex = 8;
@@ -209,9 +224,10 @@ namespace GUI
             // 
             // lblChangeBookingHeader
             // 
+            this.lblChangeBookingHeader.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblChangeBookingHeader.AutoSize = true;
             this.lblChangeBookingHeader.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblChangeBookingHeader.Location = new System.Drawing.Point(291, 8);
+            this.lblChangeBookingHeader.Location = new System.Drawing.Point(200, 9);
             this.lblChangeBookingHeader.Name = "lblChangeBookingHeader";
             this.lblChangeBookingHeader.Size = new System.Drawing.Size(358, 39);
             this.lblChangeBookingHeader.TabIndex = 7;
@@ -219,7 +235,8 @@ namespace GUI
             // 
             // pBoxCurrentMovie
             // 
-            this.pBoxCurrentMovie.Location = new System.Drawing.Point(269, 50);
+            this.pBoxCurrentMovie.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pBoxCurrentMovie.Location = new System.Drawing.Point(217, 51);
             this.pBoxCurrentMovie.Name = "pBoxCurrentMovie";
             this.pBoxCurrentMovie.Size = new System.Drawing.Size(234, 347);
             this.pBoxCurrentMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -228,6 +245,7 @@ namespace GUI
             // 
             // cBoxChooseAmtTickets
             // 
+            this.cBoxChooseAmtTickets.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cBoxChooseAmtTickets.FormattingEnabled = true;
             this.cBoxChooseAmtTickets.Items.AddRange(new object[] {
             "1",
@@ -250,7 +268,7 @@ namespace GUI
             "18",
             "19",
             "20"});
-            this.cBoxChooseAmtTickets.Location = new System.Drawing.Point(528, 328);
+            this.cBoxChooseAmtTickets.Location = new System.Drawing.Point(476, 329);
             this.cBoxChooseAmtTickets.Name = "cBoxChooseAmtTickets";
             this.cBoxChooseAmtTickets.Size = new System.Drawing.Size(121, 27);
             this.cBoxChooseAmtTickets.TabIndex = 5;
@@ -258,8 +276,9 @@ namespace GUI
             // 
             // lblHallNumber
             // 
+            this.lblHallNumber.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblHallNumber.AutoSize = true;
-            this.lblHallNumber.Location = new System.Drawing.Point(557, 258);
+            this.lblHallNumber.Location = new System.Drawing.Point(505, 259);
             this.lblHallNumber.Name = "lblHallNumber";
             this.lblHallNumber.Size = new System.Drawing.Size(85, 19);
             this.lblHallNumber.TabIndex = 4;
@@ -267,8 +286,9 @@ namespace GUI
             // 
             // lblTickets
             // 
+            this.lblTickets.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTickets.AutoSize = true;
-            this.lblTickets.Location = new System.Drawing.Point(522, 211);
+            this.lblTickets.Location = new System.Drawing.Point(470, 212);
             this.lblTickets.Name = "lblTickets";
             this.lblTickets.Size = new System.Drawing.Size(161, 19);
             this.lblTickets.TabIndex = 3;
@@ -276,8 +296,9 @@ namespace GUI
             // 
             // lblMovie
             // 
+            this.lblMovie.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblMovie.AutoSize = true;
-            this.lblMovie.Location = new System.Drawing.Point(575, 165);
+            this.lblMovie.Location = new System.Drawing.Point(523, 166);
             this.lblMovie.Name = "lblMovie";
             this.lblMovie.Size = new System.Drawing.Size(47, 19);
             this.lblMovie.TabIndex = 2;
@@ -285,8 +306,9 @@ namespace GUI
             // 
             // lblLName
             // 
+            this.lblLName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLName.AutoSize = true;
-            this.lblLName.Location = new System.Drawing.Point(562, 116);
+            this.lblLName.Location = new System.Drawing.Point(510, 117);
             this.lblLName.Name = "lblLName";
             this.lblLName.Size = new System.Drawing.Size(74, 19);
             this.lblLName.TabIndex = 1;
@@ -294,9 +316,10 @@ namespace GUI
             // 
             // lblFName
             // 
+            this.lblFName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFName.AutoSize = true;
             this.lblFName.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblFName.Location = new System.Drawing.Point(560, 71);
+            this.lblFName.Location = new System.Drawing.Point(508, 72);
             this.lblFName.Name = "lblFName";
             this.lblFName.Size = new System.Drawing.Size(75, 19);
             this.lblFName.TabIndex = 0;
@@ -304,11 +327,34 @@ namespace GUI
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.panel1.Location = new System.Drawing.Point(142, 67);
+            this.panel1.Controls.Add(this.lblMovieStartsAt);
+            this.panel1.Controls.Add(this.lblMovieStartAtHeader);
+            this.panel1.Location = new System.Drawing.Point(90, 68);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(121, 133);
+            this.panel1.Size = new System.Drawing.Size(121, 215);
             this.panel1.TabIndex = 17;
+            // 
+            // lblMovieStartsAt
+            // 
+            this.lblMovieStartsAt.AutoSize = true;
+            this.lblMovieStartsAt.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblMovieStartsAt.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lblMovieStartsAt.Location = new System.Drawing.Point(1, 157);
+            this.lblMovieStartsAt.Name = "lblMovieStartsAt";
+            this.lblMovieStartsAt.Size = new System.Drawing.Size(41, 17);
+            this.lblMovieStartsAt.TabIndex = 20;
+            this.lblMovieStartsAt.Text = "label1";
+            // 
+            // lblMovieStartAtHeader
+            // 
+            this.lblMovieStartAtHeader.AutoSize = true;
+            this.lblMovieStartAtHeader.Location = new System.Drawing.Point(15, 132);
+            this.lblMovieStartAtHeader.Name = "lblMovieStartAtHeader";
+            this.lblMovieStartAtHeader.Size = new System.Drawing.Size(103, 19);
+            this.lblMovieStartAtHeader.TabIndex = 0;
+            this.lblMovieStartAtHeader.Text = "Movie Starts At";
             // 
             // ChangeBookingSuccessfulForm
             // 
@@ -316,6 +362,7 @@ namespace GUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(711, 397);
             this.Controls.Add(this.panelChangeBookingSucFilled);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ChangeBookingSuccessfulForm";
             this.Text = "ChangeBookingSuccessfulForm";
             this.Load += new System.EventHandler(this.ChangeBookingSuccessfulForm_Load);
@@ -323,6 +370,8 @@ namespace GUI
             this.panelChangeBookingSucFilled.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxAllowedAmtTicketsChange)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxCurrentMovie)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -350,5 +399,7 @@ namespace GUI
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnReBook;
         private System.Windows.Forms.PictureBox pBoxAllowedAmtTicketsChange;
+        private System.Windows.Forms.Label lblMovieStartAtHeader;
+        private System.Windows.Forms.Label lblMovieStartsAt;
     }
 }

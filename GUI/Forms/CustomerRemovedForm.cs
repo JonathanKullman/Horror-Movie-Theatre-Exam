@@ -39,6 +39,7 @@ namespace GUI
             lblTicketsLefttxt.Text = theatre.SeatsLeft.ToString();
             lblPlusUrOwnTickets.Text = $"Plus your own [{customer.Tickets.Count}]\n" +
                                        $"        tickets";
+            lblMovieStartsAt.Text = theatre.StartTime.ToString();
         }
 
         private void btnCancelBooking_CLick(object sender, EventArgs e)
